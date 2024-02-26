@@ -1,0 +1,11 @@
+global:
+  postgresql:
+    auth:
+      postgresPassword: "rootpass123"
+      username: "rootuser"
+      password: "rootpass123"
+      database: "mlflow"
+
+primary:
+  service:
+    type: LoadBalancer

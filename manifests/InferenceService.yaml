@@ -1,0 +1,10 @@
+apiVersion: "serving.kserve.io/v1beta1"
+kind: "InferenceService"
+metadata:
+  name: "sklearn-iris"
+spec:
+  predictor:
+    model:
+      modelFormat:
+        name: sklearn
+      storageUri: "s3://mlflow/0/a02da3e8134d4cf3b1344f6095c6e141/artifacts/random-forest-model/model.pkl"

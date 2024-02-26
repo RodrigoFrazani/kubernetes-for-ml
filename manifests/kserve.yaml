@@ -1,0 +1,5 @@
+kserve:
+  storage:
+    s3:
+      accessKeyIdName: rootuser
+      secretAccessKeyName: rootpass123

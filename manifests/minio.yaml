@@ -1,0 +1,19 @@
+mode: standalone
+
+rootUser: rootuser
+rootPassword: rootpass123
+
+replicas: 1
+
+persistence:
+  size: 10Gi
+
+consoleService:
+  type: LoadBalancer
+
+resources:
+  requests:
+    memory: 512Mi
+
+buckets:
+  - name: mlflow

@@ -1,0 +1,25 @@
+extraEnvVars:
+  MLFLOW_S3_ENDPOINT_URL: "http://minio.default.svc.cluster.local:9000"
+  MLFLOW_S3_IGNORE_TLS: true
+
+artifactRoot:
+  s3:
+    enabled: true
+    bucket: "mlflow"
+    path: ""
+    awsAccessKeyId: "rootuser"
+    awsSecretAccessKey: "rootpass123"
+
+service:
+  type: LoadBalancer
+
+backendStore:
+  databaseConnectionCheck: true
+  databaseMigration: true
+  postgres:
+    enabled: true
+    host: "postgresql.default.svc.cluster.local"
+    port: 5432
+    database: "mlflow"
+    user: "rootuser"
+    password: "rootpass123"
