@@ -3,6 +3,7 @@
 *** que possa melhorá-lo ainda mais dê um fork no repositório e crie uma Pull
 *** Request ou abra uma Issue com a tag "sugestão".
 *** Obrigado novamente! Agora vamos rodar esse projeto incrível : D
+*** Video aula no youtube: https://www.youtube.com/watch?v=zz-vkI_L_iE
 -->
 
 # Primeiros Passos com Kubernetes para Ciência de Dados
